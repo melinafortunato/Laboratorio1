@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <body background="./images fondo.jpeg"></body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1 id="secciones">La musica en la edad media</h1>
+
+    <img src="https://musicaenlaedadmedia.files.wordpress.com/2014/11/cantiga010l.gif" alt= imagen 1
+        height="300px" width="500px"/>  
+    </br>
+        <button> <a href="https://musicaenlaedadmedia.wordpress.com/" target="_blank" //para que aparezca en otra pestaña//><type="button" name="ir al articulo">ir al articulo</a></button>
+
+    <h1>Realice las siguientes tareas</h1>
+
+        <il><a href="https://recursos.santillana.es/file/packs/1141092.pdf" target="_blank">Lea los siguientes capitulos del articulo</a>
+            <ul>
+                <li>Capitulo N° 1</a><!---quise poner el capitulo especifico que pido pero no se como hacer para que vaya a esa parte del articulo general---> 
+                <li>Capitulo N° 2</a><!---quise poner el capitulo especifico que pido pero no se como hacer para que vaya a esa parte del articulo general---> 
+                <li>Capitulo N° 3</a><!---quise poner el capitulo especifico que pido pero no se como hacer para que vaya a esa parte del articulo general---> 
+            </ul>  
+        </li>
+
+        <il><a href="https://recursos.santillana.es/file/packs/1141092.pdf" target="_blank">Realice un resumen de los capitulos</a>
+            <ul>
+                <li>Capitulo N° 1</a><!---quise poner el capitulo especifico que pido pero no se como hacer para que vaya a esa parte del articulo general---> 
+                <li>Capitulo N° 3</a><!---quise poner el capitulo especifico que pido pero no se como hacer para que vaya a esa parte del articulo general---> 
+            </ul>
+        </li>
+
+        <il><a href="https://recursos.santillana.es/file/packs/1141092.pdf" target="_blank">Haga una breve interpretacion del siguiete capitulo</a>
+                <ul>  
+                    <li>Capitulo N° 2</a><!---quise poner el capitulo especifico que pido pero no se como hacer para que vaya a esa parte del articulo general---> 
+                </ul>
+                </li>
+    <hr>
+    <H1>Formulario de inscripcion (Adjuntar tarea)</H1><a href="#secciones"> Seccion tarea</a>
+    </br>
+    </br>
+    <form action="#" method="post" enctype="multipart/form-data">
+        
+        <label for="nombre">Nombre</label> 
+        <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre" required>
+    </br>
+    </br>
+        <label for="apellido">Apellido</label> 
+        <input id="apellido" type="text" name="apellido" placeholder="Ingrese su apellido" required>
+    </br>
+    </br>
+        <label for="edad">Edad</label> 
+        <input id="edad" type="text" name="Edad" placeholder="Ingrese su edad" required>
+    </br>
+    </br>
+        <label for="E-mail">E-mail</label> 
+        <input id="E-mail" type="email" name="E-mail" placeholder="Ingrese su E-mail" required>
+    </br>
+    </br>
+        <label for="Contraseña">Contraseña</label> 
+        <input id="Contraseña" type="password" name="password" placeholder="Ingrese su Contraseña" required>
+    </br>
+    </br> 
+        <label>Genero</label> 
+    </br>
+    </br>
+        <input id="1" type="radio" name="sexo"required> 
+        <label for="1">M</label>
+        <input id="2" type="radio" name="sexo"required> 
+        <label for="2">F</label>
+        <input id="3" type="radio" name="sexo"required> 
+        <label for="3">N</label></br>
+    </br> 
+        <label>Disponibilidad Horaria:</label> 
+    </br> 
+    </br>
+        <label for="uno">Mañana</label>
+        <input id="uno" type="checkbox" name="Horario"required> </br>
+        <label for="dos">Media tarde</label>
+        <input id="dos" type="checkbox" name="Horario"required> </br>
+        <label for="tres">Noche</label>
+        <input id="tres" type="checkbox" name="Horario"required> </br> 
+    </br>
+    <li><label>Seleccione una categoria que exprese cuanto conoce sobre la música en la edad media </label>
+    <select name="" required> <!---no se que iria aca en name-->
+        <option value="1">Principante</option>
+        <option value="2">Conocedor</option>
+        <option value="3">Experto</option>
+    </select>
+    <h4>FOTO FRONTAL DEL DNI</h4> 
+        <input id="foto" type="file" name="foto" required>
+    </br>
+    <H4>TAREA TERMINADA</H4> 
+        <input id="tarea" type="file" name="tarea terminada" required>             
+    </br>
+    </br>   
+        <button type="button">Acción</button>
+        <button type="reset">Limpiar</button>
+        <button type="submit">Enviar registro</button>
+    </form>
+</body>
+</html>
