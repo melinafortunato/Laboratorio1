@@ -1,0 +1,98 @@
+*{
+    font-family: sans-serif, unset , monospace;
+    margin: 0PX;
+    padding: 0PX;
+}
+:root{
+    --title:sans-serif;
+    --subtitle:unset;
+    --color-primary:#ff44f5;
+    --color-secondary: #036156;
+    --size-xl:30px;
+    --size-s: 10px;
+    --size-m:20px;
+}
+
+body{background: url(./images\ fondo.jpeg);
+
+}
+
+.title{
+    font-family: var(--title);
+    font-size: var(--size-xl);
+    color:white ;
+}
+.subtitle{ 
+    font-family:var(--subtitle) ;
+    font-size: var(--size-m);
+}
+button{
+    border: none;
+    padding: 200xp;
+    box-sizing: border-box;
+    border-radius:20px 20px 20px 20px;
+    font-size: 120%;
+    background-color: aqua;
+}
+header h1{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translatex(-80%) translatey(-80%);
+}
+header{
+    width: 150vw;
+    background: url(./licensed-image.jpeg);
+    background-size:cover;
+    box-sizing: content-box;
+}
+aside{
+    width: 100%;
+    padding-left: 400px;
+    background-color: url(.jpeg);
+}
+main{
+    width: 75%;
+    }
+footer{
+    width: 100vw;
+    background-color: black;
+}
+#menu{
+    margin: none;
+    /*padding: 0px 20px 5px 0px es lo mismo que los otros dos */
+    padding-left: 3px; 
+    padding-top: 5px;
+    width: 700px;
+    height: 30PX;
+}
+#menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#menu ul li{ 
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+    float: left;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#menu ul li a:hover{
+    color: royalblue
+}
+footer p a{
+    text-decoration: none;
+    color: rgb(184, 11, 126);
+    font-weight: bold;
+}
+footer p a:hover{
+    color: royalblue
+}
+footer h1{
+    color: aqua;
+}
