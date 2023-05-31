@@ -1,0 +1,47 @@
+*{
+    margin: 0PX;
+    padding: 0PX;
+}
+
+body{background: url(./images\ fondo.jpeg);}
+#title{
+    font-size: 1cm;
+    padding: 10px; 
+    color: rgba(128, 85, 0, 0.634);  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+    width: 300px;
+    padding: 10px;
+}
+main div h3{
+    padding: 10px
+}
+aside div h2{
+    padding: 35px;
+    color: rgba(128, 0, 0, 0.827);
+    float: left;
+}
+aside div p{
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    text-align: justify;
+    font-size: 1em;
+}
+section h2{
+    padding: 5px;
+    color:rgba(128, 0, 0, 0.84);
+    float: left;
+}
+section li{
+    padding-block-start: 10px;
+    
+}
+body hr{
+    border-color: black;
+}
+.medio{
+    border-color:brown;
+}
+
