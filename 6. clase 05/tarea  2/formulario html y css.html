@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <H1>Formulario de inscripción</H1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label class= "datos" for="nombre">NOMBRE</label> 
+        <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre" required>
+    </br>
+    </br>
+        <label class= "datos" for="apellido">APELLIDO</label> 
+        <input id="apellido" type="text" name="apellido" placeholder="Ingrese su apellido" required>
+    </br>
+    </br>
+        <label class= "datos" for="edad">EDAD</label> 
+        <input id="edad" type="text" name="Edad" placeholder="Ingrese su edad" required>
+    </br>
+    </br>
+        <label class= "datos" for="E-mail">E-MAIL</label> 
+        <input id="E-mail" type="email" name="E-mail" placeholder="Ingrese su E-mail" required>
+    </br>
+    </br>
+        <label class= "datos" for="Contraseña">CONTRASEÑA</label> 
+        <input id="Contraseña" type="password" name="password" placeholder="Ingrese su Contraseña" required>
+    </br>
+    </br> 
+        <label id="title"><U>GENERO</U></label> 
+    </br>
+    </br>
+        <input id="1" type="radio" name="sexo"required> 
+        <label for="1">M</label>
+        <input id="2" type="radio" name="sexo"required> 
+        <label for="2">F</label>
+        <input id="3" type="radio" name="sexo"required> 
+        <label for="3">N</label></br>
+    </br> 
+        <label id="title"><u>DISPONIBILIDAD HORARIA:</u></label> 
+    </br> 
+    </br>
+        <label for="uno">Mañana</label>
+        <input id="uno" type="checkbox" name="Horario"required> </br>
+        <label for="dos">Media tarde</label>
+        <input id="dos" type="checkbox" name="Horario"required> </br>
+        <label for="tres">Noche</label>
+        <input id="tres" type="checkbox" name="Horario"required> </br> 
+    </br>
+     <label id="title"><u>NACIONALIDAD:</u> </label>
+    <div class="nacionalidad1">
+        <select name="" required> <!---no se que iria aca en name-->
+            <option value="1">Argentina</option>
+            <option value="2">Española</option>
+            <option value="3">Italiana</option>
+        </select>
+    </div>
+    <h4><u>FOTO FRONTAL DEL DNI</u></h4> 
+        <input id="foto" type="file" name="foto" required>
+    <section> 
+        <button type="reset">Limpiar</button>
+        <button type="submit">Enviar registro</button>
+    </section> 
+</form>
+</body>
+</html>

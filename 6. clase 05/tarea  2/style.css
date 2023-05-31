@@ -1,0 +1,51 @@
+*{
+    
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body{
+    background: url(./licensed-image.jpeg);
+}
+
+form{
+    height: 600px; 
+    border: solid black;
+    border-radius: 10px 10px 10px 10px;
+    width: 30%;
+    margin: auto;
+    background: url(./images\ fondo.jpeg);
+    text-align: left;
+    padding: 10px;
+
+}
+h1{
+   text-align: center;
+    color: aliceblue;
+}
+h4{
+    text-align: center;
+    margin: 0px;
+}
+section{
+    text-align: center;
+}
+button{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(27, 8, 240, 0.463);
+}
+#title{
+    color: rgb(35, 7, 77);
+    font-weight: bold;
+}
+.nacionalidad1 :hover{
+    color: rgb(31, 4, 113);
+}
+.datos{
+    font-weight: bold;
+}
