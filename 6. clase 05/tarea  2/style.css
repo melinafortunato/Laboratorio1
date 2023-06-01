@@ -49,3 +49,9 @@ button{
 .datos{
     font-weight: bold;
 }
+#foto{
+    color: rgb(39, 2, 68);
+}
+.dni{
+    background:rgba(161, 130, 238, 0.4) ;
+}
