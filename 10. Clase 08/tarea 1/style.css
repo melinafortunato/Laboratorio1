@@ -1,0 +1,27 @@
+.GRID{
+    display: grid;
+    grid-template-areas: "menu contenido"
+                          "menu imagen";
+}
+.GRID div{
+    background-color: blueviolet;
+    padding: 20px 0px;
+    border: solid 1px black;
+    text-align: center;  
+    font-size: 20px;
+}
+
+.item1{
+    grid-area: menu;
+    height: 600px;
+    width: 100%;
+}
+.item2{
+    grid-area: contenido;
+    width: 50%;
+
+}
+.item3{
+    grid-area: imagen;
+    width: 50%;
+}
