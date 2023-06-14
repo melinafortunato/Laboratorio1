@@ -20,7 +20,8 @@ body{
     font-size: 20px;
     border: solid 2px black;
     border-radius: 5px;
-    text-align: center;
+    text-align: left;
+    padding: 15px;
    
     }
 
