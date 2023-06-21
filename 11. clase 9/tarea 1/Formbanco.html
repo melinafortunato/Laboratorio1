@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de banco</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <form action="#" method="post" enctype="multipart/form-data">
+    <H1>Consultas bancarias</H1>
+    <div class="input">
+        <label class="label1" for="nombre">Nombre commpleto</label> 
+        <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre" required>
+        <i class="fa-solid fa-user cart"></i>
+    </div>
+    <div class="input">
+        <label class="label1"  for="apellido">Apellido</label> 
+        <input id="apellido" type="text" name="apellido" placeholder="Ingrese su apellido" required>
+        <i class="fa-solid fa-user cart"></i>
+    </div>
+    <div class="input">
+            <label class="label1" for="Telefono">Telefono</label> 
+            <input id="Telefono" type="tel" name="number" placeholder="Ingrese su Telefono" required>
+            <i class="fa-solid fa-phone cart"></i>
+    </div>
+    <div class="input">
+        <label class="label1" for="E-mail">E-mail</label> 
+        <input id="E-mail" type="email" name="E-mail" placeholder="Ingrese su E-mail" required>
+        <i class="fa-solid fa-envelope cart"></i>
+    </div>
+    <div class="input">
+        <label class="label1" for="Contraseña">Contraseña</label> 
+        <input id="Contraseña" type="password" name="password" placeholder="Ingrese su Contraseña" required>
+    </div>
+    <div class="input">
+        <label class="titulo">Tipo de cuenta:</label> <i class="fa-solid fa-money-check"></i>
+        <input id="1" type="radio" name="cuenta"required> 
+        <label class="label1" for="1">Cuenta de ahorro en pesos</label>
+        <input id="2" type="radio" name="cuenta"required> 
+        <label class="label1" for="2">Cuenta en dolares</label>
+        
+    </div>
+    <div class="input" >
+        <label class="mensaje" for="texto">Consulta</label> 
+        <textarea rows="5" cols="53" placeholder="ingrese su consulta" required></textarea>
+    </div>
+    <div class="submit">
+        <button  type="reset">Limpiar</button>
+        <button type="submit">Enviar consulta</button>
+    </div>  
+</form>
+</body>
+</html>
