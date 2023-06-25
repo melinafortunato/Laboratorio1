@@ -1,0 +1,399 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+header .logo img {
+    max-width: 10%;
+}
+
+header .logo {
+    padding: 10px;
+    width: 20%;
+    background-image: url(./1ace3d4cd11d4e313a63b9e2aa83661f.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(108 161 73);
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-right: 100px;
+}
+
+header nav ul li a:hover {
+    color: white;
+    border-bottom: 2px solid rgb(58 91 38);
+    font-size: 22px;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background: white;
+    border: solid 1px black;
+
+
+}
+
+h1 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.contenido {
+    display: flex;
+}
+
+main {
+    display:flex;
+    background-color: #afbc46;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    height: 550px;
+}
+
+
+main .card {
+    width: 23%;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: solid 1px black;
+    height: 350px;
+
+}
+
+main .card .image img {
+    max-width: 100%;
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+main .card .precio {
+    margin: 30px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-left: 2px solid blue;
+    text-align: left;
+}
+
+main .card .titulo {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+main .card .cart {
+    display: none;
+}
+
+main .card .precio:hover {
+    color: rgb(61, 5, 244);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgb(1, 52, 11);
+}
+
+main .card .precio:hover .cart {
+    display: inline-block;
+}
+
+main .card .content-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 10px;
+    text-align: center;
+}
+.titulo1{
+   color: white;
+}
+h2{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+}
+.aside {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    background:#420d2c;
+}
+
+.aside aside {
+    display: grid;
+    grid-gap: 30px;
+    margin: 20px;
+    grid-template-areas: "1 2"
+        "3 4"
+        "5 6"
+       ;
+}
+
+.aside aside img {
+    margin-bottom: 0px;
+    max-width: 100%;
+    border: solid 2px white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.aside aside img:hover{
+    border: solid 2px rgb(4, 79, 231);
+    margin-bottom: 10px;
+}
+
+.aside aside .img1 {
+    grid-area: 1;
+}
+
+.aside aside.img2 {
+    grid-area: 2;
+}
+
+.aside aside.img3 {
+    grid-area: 3;
+}
+
+.aside aside.img4 {
+    grid-area: 4;
+}
+
+.aside aside.img5 {
+    grid-area: 5;
+}
+
+.aside aside.img6 {
+    grid-area: 6;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    border-top: solid 1px white;
+}
+label{
+    margin-left: 20px;
+}
+footer .redes{
+    padding-left: 250px;
+}
+footer .botonredes{
+    margin: 40px;
+    width: 70px;
+    border-radius: 10px;
+}
+footer .botonredes i{
+        background: white;
+        color: black;
+        font-size: 30px;
+}
+footer .botonredes i:hover{
+    background: greenyellow;
+        color: black;
+        
+}
+footer .botonredes:hover{
+    background: #afbc46;
+}
+@media (max-width: 768px) {
+    header{width: 100%;
+        height: 15vh;}
+    header nav {
+        width: 80%;
+        display:inline-block;}
+        header nav ul li a{
+            font-size: 17px;
+            margin: 10px;
+            padding-bottom: 10px;
+            border-right: solid 1px rgb(247, 241, 241);
+        }
+        header nav ul li a:hover {
+            color: white;
+            border: none;
+            font-size: 19px;
+        }
+    
+        .title {font-size: 10px;}  
+        h2{font-size: 10px;}
+    .main{width: 100%;}
+    main .card{ height: 200px;}   
+    main .card .image img{ 
+        max-width: 100%;
+        width: 100%;
+        height: 75px;
+    }
+    main .card {
+               height: 200px;
+    }
+    
+    main .card .precio {
+        margin: 15px;
+        font-size: 10px;
+        padding: 10px;
+    }
+    main .card .titulo {
+        font-size: 10px;
+        padding: 10px;
+    }
+    main .card .precio:hover {
+        font-size: 8px;
+        border-radius: 10px;
+
+    }
+     .aside{width: 100%;}
+    
+    .aside aside {
+        display: grid;
+        grid-gap: 15px;
+        margin: 10px;
+    }
+    
+    .aside aside img {
+        max-width: 50%;
+      
+    }
+
+    footer {
+        height: 15vh;
+
+    }
+    label{
+        margin-left: 50px;
+    }
+    footer .redes{
+        padding-left: 20px;
+    }
+    footer .botonredes{
+        margin: 10px;
+        width: 30px;
+        border-radius: 10px;
+    }
+    footer .botonredes i{
+            font-size: 15px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 1350px)   {
+        header nav ul li a{
+            font-size: 20px;
+            border-right: 1px solid white;
+        }
+        header nav ul li a:hover {
+            color: white;
+            border: none;
+            font-size: 25px;
+        }
+    
+        .title {font-size: 15px;}  
+        h2{font-size: 30px;}
+    .main{width: 100%;}
+    main .card{ height: 300px;}   
+    main .card .image img{ 
+        max-width: 100%;
+        width: 100%;
+        height: 125px;
+    }
+    main .card {
+               height: 300px;
+    }
+    
+    main .card .precio {
+        margin: 20px;
+        font-size: 20px;
+        padding: 15px;
+    }
+    main .card .titulo {
+        font-size: 20px;
+        padding: 20px;
+    }
+    main .card .precio:hover {
+        font-size: 15px;
+        border-radius: 10px;
+
+    }
+     .aside{width: 100%;}
+    
+    
+    .aside aside img {
+        max-width: 50%;
+          }
+          .aside aside {
+                     grid-template-areas: "1 2 3"
+                "4 5 6"
+               ;
+        }
+
+    footer {
+        height: 15vh;
+
+    }
+    label{
+        margin-left: 50px;
+    }
+    footer .redes{
+        padding-left: 150px;
+    }
+    footer .botonredes{
+        margin: 30px;
+        width: 30px;
+        border-radius: 10px;
+    }
+    footer .botonredes i{
+            font-size: 20px;
+    }
+}
+
+
+
