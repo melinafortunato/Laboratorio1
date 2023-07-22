@@ -7,15 +7,18 @@ let num1= prompt ("ingrese su primer numero: ")
 let num2= prompt ("ingrese su segundo numero: ")
 let num3= prompt ("ingrese su tercer numero: ")
 
-if (num1 > num2 & num1 > num3) {
-    console.log(num1, "es el mayor")
+if(!(Number(num1))||!(Number(num2))||!(Number(num3))){
+    console.log("Ingrese solo numeros")
+}
+else if (num1 > num2 & num1 > num3) {
+    console.log("Entre",num1,num2, "y", num3, "el mayor es",num1)
 }
 else if (num2 > num1 & num2 > num3) {
 
-    console.log(num2, "es el mayor")
+    console.log("Entre",num1,num2, "y", num3, "el mayor es",num2)
 }
 else {
-    console.log(num3, "es el mayor")
+    console.log("Entre",num1,num2, "y", num3, "el mayor es",num3)
 }
 
 
