@@ -3,9 +3,9 @@ const prompt=require("prompt-sync")({sigint:true});
 
 // cual es el numero mas grande que ingresa el usuario?
 
-let num1= prompt ("Ingrese su primer numero: ")
-let num2= prompt ("Ingrese su segundo numero: ")
-let num3= prompt ("Ingrese su tercer numero: ")
+let num1= Number (prompt ("Ingrese su primer numero: "))
+let num2= Number (prompt ("Ingrese su primer numero: "))
+let num3= Number (prompt ("Ingrese su primer numero: "))
 
 if(!(Number(num1))||!(Number(num2))||!(Number(num3))){
     console.log("Ingrese solo numeros")
