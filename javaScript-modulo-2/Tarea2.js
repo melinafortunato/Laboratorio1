@@ -3,22 +3,22 @@ const prompt=require("prompt-sync")({sigint:true});
 
 // cual es el numero mas grande que ingresa el usuario?
 
-let num1= prompt ("ingrese su primer numero: ")
-let num2= prompt ("ingrese su segundo numero: ")
-let num3= prompt ("ingrese su tercer numero: ")
+let num1= prompt ("Ingrese su primer numero: ")
+let num2= prompt ("Ingrese su segundo numero: ")
+let num3= prompt ("Ingrese su tercer numero: ")
 
 if(!(Number(num1))||!(Number(num2))||!(Number(num3))){
     console.log("Ingrese solo numeros")
 }
 else if (num1 > num2 & num1 > num3) {
-    console.log("Entre",num1,num2, "y", num3, "el mayor es",num1)
+    console.log("Entre",num1,num2, "y", num3, "el mayor es: ",num1)
 }
 else if (num2 > num1 & num2 > num3) {
 
-    console.log("Entre",num1,num2, "y", num3, "el mayor es",num2)
+    console.log("Entre",num1,num2, "y", num3, "el mayor es: ",num2)
 }
 else {
-    console.log("Entre",num1,num2, "y", num3, "el mayor es",num3)
+    console.log("Entre",num1,num2, "y", num3, "el mayor es: ",num3)
 }
 
 
