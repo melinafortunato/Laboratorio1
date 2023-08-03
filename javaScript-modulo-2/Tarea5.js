@@ -1,5 +1,7 @@
 const prompt=require("prompt-sync")({sigint:true});
 
+// Array de perosnas:
+
 let DataPersona= [];
 
 const addDataPersona= (Nombre, Apellido, Edad, Direccion, status, condicion) =>{
@@ -30,17 +32,22 @@ addDataPersona("Caterina", "Paricie" ,28, "Mar del plata", 1, true);
  
 console.table(DataPersona)
 
-let Nombre2=  prompt("Nombre que desea buscar (comience con mayuscula): ")
+// Filtrado por letra
+
+let Nombre2=  prompt("Nombre que desea buscar: ")
 let dataPersonaFiltre= DataPersona.filter((elemento) =>{
-   return elemento.Nombre == Nombre2
+   return elemento.Nombre.toLowerCase().includes(Nombre2.toLowerCase()) 
 })
 console.table(dataPersonaFiltre)
 console.log("*********************************")
+
+// Promedio de edad:
+
 let Sumadelaedad = 0;
 DataPersona.forEach((elemento) => {
         Sumadelaedad += elemento.Edad;
 });
 
-let promedioEdad = Sumadelaedad / DataPersona.length;
-console.log("Promedio de edad: ", promedioEdad);
+let promedio = Sumadelaedad / DataPersona.length;
+console.log("Promedio de edad: ", promedio);
 
