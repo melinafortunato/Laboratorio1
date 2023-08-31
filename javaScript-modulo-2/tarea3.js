@@ -1,7 +1,8 @@
 const prompt=require("prompt-sync")({sigint:true});
 
 let numero= parseInt(prompt ("ingrese de que numero desea la tabla: "))
-let tabla= prompt("Elija que operacion desea: Presione 1 si quiere la de sumar, presione 2 si quiere la de restar, presione 3 si quiere la de Multiplicar o presione 4 si quiere la de dividir:  ")
+let tabla = prompt("Opciones: 1- Tabla de multiplicar 2- Tabla de sumar 3- Ttabla de restar 4- Tabla de dividir, Elija una opcion: ");
+
 
 
 const suma=(numero) => {
