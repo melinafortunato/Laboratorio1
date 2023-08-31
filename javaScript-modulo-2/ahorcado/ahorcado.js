@@ -35,6 +35,7 @@ function resetGame() {
         button.disabled = false;
     });
     pista.innerHTML="";
+    intentos.classList.remove("colorprder")
 }
 
 function botonletras(letra) {
