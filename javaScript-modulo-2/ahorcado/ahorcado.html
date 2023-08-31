@@ -1,0 +1,115 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="text-center">Juego del Ahorcado de paises</h1>
+    <div id="carteles" class="text-center mt-5"></div>
+    <div id="pista" class="text-center mt-5"></div>
+    <div id="palabraelejida" class="text-center mt-5"></div>
+    <div class="text-center">
+      <button id="boton3" type="button" class="btn btn-danger mt-5" onclick="primerpalabra()">comenzar</button>
+      <button id="boton2" type="button" class="btn btn-danger mt-5" onclick="piistas()">Dame una pista</button>
+      <button id="boton1" type="button" class="btn btn-secondary mt-5" onclick="resetGame()">Elegir otra palabra</button>
+  </div>
+  <div id="intentosrestantes"><h3>Intentos restantes:<span id="intentos"> 6</span></h3></div>
+    <div class="container text-center mt-3">
+        <div class="row">
+            <div class="col mt-5">
+                <button id="A" class="btn btn-primary letra-btn">A</button>
+            </div>
+            <div class="col mt-5">
+                <button id="B" class="btn btn-primary letra-btn">B</button>
+            </div>
+            <div class="col mt-5">
+              <button  id="C" class="btn btn-primary letra-btn">C</button>
+             </div>
+             <div class="col mt-5">
+              <button  id="D" class="btn btn-primary letra-btn">D</button>
+             </div>
+             <div class="col mt-5">
+              <button  id="E" class="btn btn-primary letra-btn">E</button>
+             </div>
+             <div class="col mt-5">
+              <button  id="F" class="btn btn-primary letra-btn">F</button>
+             </div>
+             <div class="col mt-5">
+              <button  id="G" class="btn btn-primary letra-btn">G</button>
+             </div>
+             <div class="col mt-5">
+              <button id="H" class="btn btn-primary letra-btn">H</button>
+             </div>
+             <div class="col mt-5">
+              <button  id="I" class="btn btn-primary letra-btn">I</button>
+             </div>
+             <div class="col mt-5">
+              <button  id="J" class="btn btn-primary letra-btn">J</button>
+             </div>
+             <div class="col mt-5">
+              <button  id="K" class="btn btn-primary letra-btn">K</button>
+             </div>
+             <div class="col mt-5">
+              <button  id="L" class="btn btn-primary letra-btn">L</button>
+             </div>
+             <div class="col mt-5">
+              <button id="M" class="btn btn-primary letra-btn">M</button>
+             </div>
+             <div class="col mt-5">
+              <button  id="N" class="btn btn-primary letra-btn">N</button>
+             </div>
+             <div class="col mt-5">
+              <button  id="Ñ" class="btn btn-primary letra-btn">Ñ</button>
+             </div>
+          </div>
+          <div class="row ml-1">
+            <div class="col mt-3">
+          <button id="O" class="btn btn-primary letra-btn">O</button>
+            </div>
+            <div class="col mt-3">
+              <button  id="P" class="btn btn-primary letra-btn">P</button>
+            </div>
+            <div class="col mt-3">
+               <button  id="Q" class="btn btn-primary letra-btn">Q</button>
+            </div>
+            <div class="col mt-3">
+              <button  id="R" class="btn btn-primary letra-btn">R</button>
+             </div>
+             <div class="col mt-3">
+              <button  id="S" class="btn btn-primary letra-btn">S</button>
+             </div>
+             <div class="col mt-3">
+              <button  id="T" class="btn btn-primary letra-btn ">T</button>
+             </div>
+             <div class="col mt-3">
+              <button  id="U" class="btn btn-primary letra-btn">U</button>
+             </div>
+             <div class="col mt-3">
+              <button id="V" class="btn btn-primary letra-btn">V</button>
+             </div>
+             <div class="col mt-3">
+              <button  id="W" class="btn btn-primary letra-btn">W</button>
+             </div>
+             <div class="col mt-3">
+              <button  id="X" class="btn btn-primary letra-btn">X</button>
+             </div>
+             <div class="col mt-3">
+              <button  id="Y" class="btn btn-primary letra-btn">Y</button>
+             </div>
+             <div class="col mt-3">
+              <button id="Z" class="btn btn-primary letra-btn">Z</button>
+             </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div id="imgvida"> <img src="./ahorcado1.jpg" alt=""></div> 
+    <script src="ahorcado.js"></script>
+</body>
+</html>
