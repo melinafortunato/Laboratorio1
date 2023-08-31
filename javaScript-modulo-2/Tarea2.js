@@ -3,12 +3,15 @@ const prompt=require("prompt-sync")({sigint:true});
 
 // cual es el numero mas grande que ingresa el usuario?
 
-let num1= Number (prompt ("Ingrese su primer numero: "))
-let num2= Number (prompt ("Ingrese su segundo numero: "))
-let num3= Number (prompt ("Ingrese su tercer numero: "))
+let num1= parseInt(prompt ("Ingrese su primer numero: "))
+let num2= parseInt(prompt ("Ingrese su segundo numero: "))
+let num3= parseInt(prompt ("Ingrese su tercer numero: "))
 
 if(!(Number(num1))||!(Number(num2))||!(Number(num3))){
     console.log("Ingrese solo numeros")
+}
+else if(num1==num2 || num2==num3 || num1==num3){
+    console.log("no se puede repetir")
 }
 else if (num1 > num2 & num1 > num3) {
     const opcion1= `Entre ${num1} ${num2} y  ${num3} el mayor es: ${num1}`
@@ -16,7 +19,6 @@ else if (num1 > num2 & num1 > num3) {
 }
 else if (num2 > num1 & num2 > num3) {
     const opcion2= `Entre ${num1} ${num2} y  ${num3} el mayor es: ${num2}`
-
     console.log(opcion2)
 }
 else {
@@ -41,6 +43,6 @@ let num5= prompt ("Ingrese el numero que dessea Dividir: ");
 
 
 for(let i=1; i<=10; i++){
-    const division= `${num5*i} / ${num5} = ${num5*i/num5}` 
+    const division= `${num5*i} / ${num5} = ${i}` 
     console.log(division)
 }
