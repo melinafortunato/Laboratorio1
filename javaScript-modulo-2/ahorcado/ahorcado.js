@@ -1,4 +1,4 @@
-const palabras = ["australia",  "argentina", "españa", "londres", "colombia", "mexico"];
+const palabras = ["australia",  "argentina", "españa", "colombia", "mexico"];
 const pistas=["Aca habitan muchos canguros.","Les gusta tomar fernet.", "Son famosos por el flamenco.", "Su grano del cafe es uno de los mejores.", "Si te gusta el picante este es tu lugar."]
 let cont = 6;
 let letrasadivinadas = [];
