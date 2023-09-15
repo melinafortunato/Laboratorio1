@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rammetto+One&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Rammetto+One&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --font-header: 'Syne Mono', monospace;
+  --font-header2: 'Oxyne Mono', monospace;
+  --font-header3:'Montserrat', sans-serif;
+
+
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 100, 155, 155;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: no-repeat url(../public/fondo.jpg);
+  background-size: 150%;
+
+}
+  
+.logo{
+  width: 100px;
+  height: 100px;
+ margin-right: 400px;
+}
+header{
+  z-index: 9;
+  width: 100%;
+  top: 0;
+  background-color: #f3f7f8;
+}
+.lk{
+  font-family: var(--font-header3);
+}
+.color{
+ background-color: #f4f4f4
+}
+a {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: var(--font-header3);
+  font-weight: 700;
+  font-weight: bold;
+ 
+  
+}
+.margen{
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+img{
+  width: 100%;
+  height: 594px;
+  position: relative;
+  z-index: 0;
+}
+.titulo{
+  position: absolute;
+  z-index: 1;
+  font-size: 100px;
+  color: white;
+  left: 500px;
+  opacity: 0; /* Oculta las letras inicialmente */
+  transform: translateY(80px); /* Mueve las letras hacia abajo para que entren desde arriba */
+  animation: aparecer 1s ease-in-out forwards; /* Agrega una animación */
+}
+
+.titulo1{
+  position: absolute;
+  z-index: 1;
+  font-size: 30px;
+  color: white;
+  left: 980px;
+  bottom: 350px;
+  opacity: 0; /* Oculta las letras inicialmente */
+  transform: translateY(80px); /* Mueve las letras hacia abajo para que entren desde arriba */
+  animation: aparecer 3s ease-in-out forwards; /* Agrega una animación */
+}
+
+.titulo2{
+  position: absolute;
+  z-index: 1;
+  font-size: 30px;
+  color: white;
+  left: 1050px;
+  bottom: 300px;
+  opacity: 0; /* Oculta las letras inicialmente */
+  transform: translateY(80px); /* Mueve las letras hacia abajo para que entren desde arriba */
+  animation: aparecer 3s ease-in-out forwards; /* Agrega una animación */
+}
+
+
+.titulo3{
+  position: absolute;
+  z-index: 1;
+  font-size: 30px;
+  color: white;
+  left: 1100px;
+  bottom: 200px;
+  opacity: 0; /* Oculta las letras inicialmente */
+  transform: translateY(80px); /* Mueve las letras hacia abajo para que entren desde arriba */
+  animation: aparecer 5s ease-in-out forwards; /* Agrega una animación */
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1; /* Hace que las letras sean visibles */
+    transform: translateY(0); /* Restablece la posición original */
+  }
+  }
+  .Tamaño {
+    height: auto; /* Permite que la altura se ajuste al contenido */
+    max-height: 500px; /* Define la altura máxima que deseas */
+  }
+  
+  .Tamaño .card-img-top {
+    max-height: 200px; /* Ajusta la altura máxima de la imagen */
+  }
+  
