@@ -47,6 +47,9 @@ header{
 .color{
  background-color: #f4f4f4
 }
+.colo1{background-color: rgba(255, 87, 168, 0.135);}
+
+
 a {
   font-size: 16px;
   letter-spacing: 1.5px;
